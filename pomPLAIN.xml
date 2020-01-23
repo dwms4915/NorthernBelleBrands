@@ -11,7 +11,7 @@
 	<groupId>com.nbb.pastryboutique</groupId>
 	<artifactId>pastryBoutique</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>pastryBoutique</name>
 	<description>Pastry Boutique project for Spring Boot</description>
 
@@ -25,15 +25,15 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		<dependency>
+			<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>			
 		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>		
-			<scope>provided</scope>	
+			<artifactId>spring-boot-starter-tomcat</artifactId>	
+			
 		</dependency>
 		
 		<dependency>
@@ -47,6 +47,15 @@
 			 <version>1.4.193</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-core</artifactId>
+		    <version>2.10.0</version>
+		    <scope>test</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -65,7 +74,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>			
+			</plugin>
+			
 		</plugins>
 	</build>
 
